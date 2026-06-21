@@ -127,7 +127,7 @@ function buildAutoReply(p: ContactPayload) {
     <p style="margin-bottom:4px">For urgent matters, reach us directly:</p>
     <ul style="color:#444;padding-left:20px;line-height:2">
       <li>📞 <a href="tel:+250792696038" style="color:#0A2E1F">+250 792 696 038</a> (Mon–Fri, 8am–6pm)</li>
-      <li>✉️ <a href="mailto:mukaveclimited@gmail.com" style="color:#0A2E1F">mukaveclimited@gmail.com</a></li>
+      <li>✉️ <a href="mailto:support@soma.rw" style="color:#0A2E1F">support@soma.rw</a></li>
     </ul>
     <p style="margin-top:24px">Murakoze,<br/><strong>The SOMA Market Team</strong></p>
   </div>
