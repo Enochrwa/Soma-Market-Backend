@@ -4,7 +4,6 @@ services:
     env: node
     region: oregon
     plan: starter
-    rootDir: server
     buildCommand: npm install && npm run build
     startCommand: node dist/index.js
     healthCheckPath: /api/health
@@ -63,3 +62,16 @@ services:
       # HuggingFace — for AI-powered search (optional).
       - key: HF_API_TOKEN
         sync: false
+      # pawaPay — mobile money collections & disbursements
+      - key: PAWAPAY_ENV
+        value: sandbox
+      - key: PAWAPAY_API_TOKEN
+        sync: false
+      - key: PAWAPAY_BASE_URL
+        value: https://api.sandbox.pawapay.io
+      # Generate a secret, then append it as ?token=<secret> to BOTH callback
+      # URLs you register in the pawaPay Dashboard.
+      - key: PAWAPAY_CALLBACK_SECRET
+        generateValue: true
+      - key: PAWAPAY_RECONCILE_ENABLED
+        value: "true"
